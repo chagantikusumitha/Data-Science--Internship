@@ -1,0 +1,424 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - fever_description
+  - fever_symptoms
+  - fever_prevention
+  - cancer_description
+  - cancer_symptoms
+  - cancer_prevention
+  - ask_malaria_description
+  - ask_malaria_symptoms
+  - ask_malaria_prevention
+  - ask_polio_description
+  - ask_polio_symptoms
+  - ask_polio_prevention
+  - ask_diabetes_description
+  - ask_diabetes_symptoms
+  - ask_diabetes_prevention
+  - cardiovascular_description
+  - cardiovascular_symptoms
+  - cardiovascular_prevention
+  - respiratory_description
+  - respiratory_symptoms
+  - respiratory_prevention
+  - tuberculosis_description
+  - tuberculosis_symptoms
+  - tuberculosis_prevention
+  - tumors_description
+  - tumors_symptoms
+  - tumors_prevention
+  - diarrhea_description
+  - diarrhea_symptoms
+  - diarrhea_prevention
+  - hepatitis_description
+  - hepatitis_symptoms
+  - hepatitis_prevention
+  - influenza_description
+  - influenza_symptoms
+  - influenza_prevention
+  - leprosy_description
+  - leprosy_symptoms
+  - leprosy_prevention
+  - meningitis_description
+  - meningitis_symptoms
+  - meningitis_prevention
+  - rabies_description
+  - rabies_symptoms
+  - rabies_prevention
+  - schistosomiasis_description
+  - schistosomiasis_symptoms
+  - schistosomiasis_prevention
+  - tetanus_description
+  - tetanus_symptoms
+  - tetanus_prevention
+  - trachoma_description
+  - trachoma_symptoms
+  - trachoma_prevention
+  - typhoid_description
+  - typhoid_symptoms
+  - typhoid_prevention
+  - aes_description
+  - aes_symptoms
+  - aes_prevention
+  - amoebiasis_description
+  - amoebiasis_symptoms
+  - amoebiasis_prevention
+  - buruli_ulcer_description
+  - buruli_ulcer_symptoms
+  - buruli_ulcer_prevention
+  - dengue_description
+  - dengue_symptoms
+  - dengue_prevention
+  - japanese_encephalitis_description
+  - japanese_encephalitis_symptoms
+  - japanese_encephalitis_prevention
+  - kala_azar_description
+  - kala_azar_symptoms
+  - kala_azar_prevention
+  - leishmaniasis_description
+  - leishmaniasis_symptoms
+  - leishmaniasis_prevention
+  - lymphatic_filariasis_description
+  - lymphatic_filariasis_symptoms
+  - lymphatic_filariasis_prevention
+  - onchocerciasis_description
+  - onchocerciasis_symptoms
+  - onchocerciasis_prevention
+  - pneumococcal_disease_description
+  - pneumococcal_disease_symptoms
+  - pneumococcal_disease_prevention
+  - ask_precautionary_measures
+  - ask_symptoms
+  - ask_medical_professionals
+  - ask_medicine
+  - ask_basic_amenities
+
+
+responses:
+  utter_greet:
+  - text: "Hello! How can i assist you with your health related queries today?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+  
+  utter_fever_description:
+  - text: "Fever is a common symptom characterized by an increase in body temperature above the normal range."
+
+  utter_fever_symptoms:
+  - text: "Common symptoms of fever include high body temperature, headache, muscle aches, sweating, and chills."
+
+  utter_fever_prevention:
+  - text: "To prevent fever, maintain good hygiene, wash hands regularly, avoid close contact with infected individuals, and get vaccinated if available."
+
+  utter_cancer_description:
+  - text: "Cancer is a group of diseases characterized by the uncontrolled growth and spread of abnormal cells in the body."
+
+  utter_cancer_symptoms:
+  - text: "Symptoms of cancer vary depending on the type and stage but may include unexplained weight loss, fatigue, pain, changes in the skin, and abnormal bleeding."
+
+  utter_cancer_prevention:
+  - text: "Preventive measures for cancer include adopting a healthy lifestyle, avoiding tobacco and excessive alcohol consumption, protecting yourself from the sun, and getting regular screenings."
+
+
+  utter_malaria_description:
+  - text: "Malaria is a mosquito-borne infectious disease that affects humans and other animals. It is caused by the Plasmodium parasite."
+
+  utter_malaria_symptoms:
+  - text: "The symptoms of malaria include fever, chills, headache, muscle aches, fatigue, nausea, and vomiting."
+
+  utter_malaria_prevention:
+  - text: "To prevent malaria, it is important to use mosquito nets while sleeping, wear protective clothing, use insect repellents, and eliminate mosquito breeding sites."
+
+  utter_polio_description:
+  - text: "Polio, or poliomyelitis, is a highly infectious viral disease caused by the poliovirus. It primarily affects children under the age of 5."
+
+  utter_polio_symptoms:
+  - text: "The symptoms of polio include fever, fatigue, headache, vomiting, stiffness in the neck, and pain in the limbs."
+
+  utter_polio_prevention:
+  - text: "Polio can be prevented through vaccination. Ensure that you and your children receive the recommended polio vaccine doses."
+
+  utter_diabetes_description:
+  - text: "Diabetes is a chronic metabolic disorder characterized by high blood sugar levels. It occurs when the pancreas does not produce enough insulin or when the body cannot effectively use the insulin it produces."
+
+  utter_diabetes_symptoms:
+  - text: "The symptoms of diabetes include increased thirst, frequent urination, unexplained weight loss, fatigue, blurred vision, and slow healing of wounds."
+
+  utter_diabetes_prevention:
+  - text: "To reduce the risk of diabetes, maintain a healthy weight, exercise regularly, follow a balanced diet, limit the consumption of sugary foods and drinks, and avoid smoking."
+  
+
+  utter_cardiovascular_description:
+  - text: "Cardiovascular diseases are a class of diseases that involve the heart and blood vessels. They include conditions such as coronary artery disease, heart attacks, and strokes."
+
+  utter_cardiovascular_symptoms:
+  - text: "Symptoms of cardiovascular diseases may include chest pain, shortness of breath, fatigue, dizziness, and irregular heartbeat."
+
+  utter_cardiovascular_prevention:
+  - text: "To prevent cardiovascular diseases, it is important to maintain a healthy lifestyle by eating a balanced diet, exercising regularly, avoiding smoking, managing stress, and monitoring blood pressure and cholesterol levels."
+
+  utter_respiratory_description:
+  - text: "Respiratory diseases affect the lungs and the respiratory system. They include conditions such as asthma, chronic obstructive pulmonary disease (COPD), and pneumonia."
+
+  utter_respiratory_symptoms:
+  - text: "Symptoms of respiratory diseases may include coughing, wheezing, shortness of breath, chest tightness, and frequent respiratory infections."
+
+  utter_respiratory_prevention:
+  - text: "To prevent respiratory diseases, it is important to avoid exposure to pollutants and irritants, practice good hygiene, get vaccinated against respiratory infections, and quit smoking if applicable."
+
+  utter_tuberculosis_description:
+  - text: "Tuberculosis (TB) is a bacterial infection that primarily affects the lungs. It can cause symptoms such as persistent cough, chest pain, coughing up blood, fatigue, and weight loss."
+
+  utter_tuberculosis_symptoms:
+  - text: "Symptoms of tuberculosis may include coughing for more than two weeks, chest pain, coughing up blood, fatigue, fever, and night sweats."
+
+  utter_tuberculosis_prevention:
+  - text: "To prevent tuberculosis, it is important to maintain good respiratory hygiene, such as covering the mouth when coughing or sneezing, getting vaccinated if available, and avoiding close contact with individuals who have active TB."
+
+  utter_tumors_description:
+  - text: "Malignant tumors are cancerous growths that can invade nearby tissues and spread to other parts of the body. They can occur in various organs and can cause a range of symptoms."
+
+  utter_tumors_symptoms:
+  - text: "Symptoms of malignant tumors depend on the type and location of the tumor. They may include lumps or growths, unexplained weight loss, changes in bowel or bladder habits, persistent pain, and unusual bleeding or discharge."
+
+  utter_tumors_prevention:
+  - text: "Preventing malignant tumors involves adopting a healthy lifestyle, such as maintaining a balanced diet, engaging in regular physical activity, avoiding tobacco and excessive alcohol consumption, protecting yourself from the sun, and getting regular screenings when appropriate."
+  
+  utter_diarrhea_description:
+  - text: "Diarrhea is a condition characterized by loose or watery stools, usually occurring due to an infection or digestive issue."
+
+  utter_diarrhea_symptoms:
+  - text: "Common symptoms of diarrhea include frequent bowel movements, loose or watery stools, abdominal cramps, and dehydration."
+
+  utter_diarrhea_prevention:
+  - text: "To prevent diarrhea, it is important to maintain good hygiene, such as washing hands regularly, drinking clean water, and consuming properly cooked food."
+
+  utter_hepatitis_description:
+  - text: "Hepatitis is an inflammation of the liver, commonly caused by viral infections, such as hepatitis A, B, or C."
+
+  utter_hepatitis_symptoms:
+  - text: "Symptoms of hepatitis may include fatigue, jaundice (yellowing of the skin and eyes), abdominal pain, and nausea."
+
+  utter_hepatitis_prevention:
+  - text: "To prevent hepatitis, it is important to practice safe hygiene, such as washing hands regularly, using barrier methods during sexual activity, and getting vaccinated if available."
+
+  utter_influenza_description:
+  - text: "Influenza, commonly known as the flu, is a viral respiratory illness that can cause mild to severe symptoms."
+
+  utter_influenza_symptoms:
+  - text: "Symptoms of influenza may include fever, cough, sore throat, body aches, fatigue, and nasal congestion."
+
+  utter_influenza_prevention:
+  - text: "To prevent influenza, it is recommended to get an annual flu vaccine, practice good respiratory hygiene, such as covering your mouth and nose when coughing or sneezing, and avoiding close contact with sick individuals."
+
+  utter_leprosy_description:
+  - text: "Leprosy, also known as Hansen's disease, is a chronic infectious disease that primarily affects the skin, nerves, and mucous membranes."
+
+  utter_leprosy_symptoms:
+  - text: "Symptoms of leprosy may include skin lesions, numbness or loss of sensation in affected areas, and muscle weakness."
+
+  utter_leprosy_prevention:
+  - text: "Leprosy can be prevented through early diagnosis and treatment. It is important to maintain good personal hygiene and avoid close and prolonged contact with untreated individuals."
+
+  utter_meningitis_description:
+  - text: "Meningitis is an inflammation of the protective membranes surrounding the brain and spinal cord. It can be caused by viral or bacterial infections."
+
+  utter_meningitis_symptoms:
+  - text: "Symptoms of meningitis may include severe headache, fever, neck stiffness, sensitivity to light, and confusion."
+
+  utter_meningitis_prevention:
+  - text: "To prevent meningitis, it is important to maintain good hygiene, such as washing hands regularly, completing recommended vaccinations, and avoiding close contact with infected individuals."
+  
+  utter_rabies_description:
+  - text: "Rabies is a viral disease that affects the central nervous system and is transmitted through the bite of an infected animal."
+
+  utter_rabies_symptoms:
+  - text: "The symptoms of rabies may include fever, headache, fatigue, muscle aches, irritability, and eventually, neurological symptoms such as confusion, hallucinations, and paralysis."
+
+  utter_rabies_prevention:
+  - text: "To prevent rabies, it is important to avoid contact with wild or stray animals, vaccinate pets against rabies, and seek medical attention if bitten or scratched by an animal."
+
+  utter_schistosomiasis_description:
+  - text: "Schistosomiasis, also known as bilharzia, is a parasitic disease caused by infection with blood flukes of the genus Schistosoma."
+
+  utter_schistosomiasis_symptoms:
+  - text: "The symptoms of schistosomiasis may include fever, cough, abdominal pain, diarrhea, blood in the urine or stool, and liver and spleen enlargement."
+
+  utter_schistosomiasis_prevention:
+  - text: "Preventing schistosomiasis involves avoiding contact with contaminated freshwater, wearing protective clothing when exposed to freshwater, and practicing good hygiene."
+
+  utter_tetanus_description:
+  - text: "Tetanus, also known as lockjaw, is a bacterial infection caused by the toxin-producing bacterium Clostridium tetani."
+
+  utter_tetanus_symptoms:
+  - text: "The symptoms of tetanus include muscle stiffness and spasms, particularly in the jaw muscles (hence the name lockjaw), as well as difficulty swallowing and muscle rigidity."
+
+  utter_tetanus_prevention:
+  - text: "To prevent tetanus, it is important to maintain up-to-date tetanus immunization, particularly with a tetanus toxoid vaccine."
+
+  utter_trachoma_description:
+  - text: "Trachoma is a contagious bacterial infection of the eye that can lead to vision loss and blindness if left untreated."
+
+  utter_trachoma_symptoms:
+  - text: "The symptoms of trachoma may include eye discharge, redness, itching, blurred vision, and in advanced cases, eyelid deformities and corneal scarring."
+
+  utter_trachoma_prevention:
+  - text: "Preventing trachoma involves promoting good hygiene practices, such as facial cleanliness and proper sanitation, and seeking early treatment for infected individuals."
+
+  utter_typhoid_description:
+  - text: "Typhoid fever is a bacterial infection caused by Salmonella typhi and is primarily transmitted through contaminated food and water."
+
+  utter_typhoid_symptoms:
+  - text: "The symptoms of typhoid may include high fever, headache, abdominal pain, constipation or diarrhea, rose-colored spots on the chest, and general weakness."
+
+  utter_typhoid_prevention:
+  - text: "To prevent typhoid, it is important to practice good hygiene, such as regular handwashing, consume safe and clean food and water, and consider vaccination in high-risk areas."
+  
+
+  utter_aes_description:
+  - text: "Acute Encephalitis Syndrome (AES) is a severe neurological condition that causes inflammation of the brain. It is characterized by high fever, headache, stiffness in the neck, and altered mental state. AES can lead to serious complications and requires immediate medical attention."
+
+  utter_aes_symptoms:
+  - text: "The common symptoms of Acute Encephalitis Syndrome include high fever, headache, neck stiffness, seizures, confusion, disorientation, and unconsciousness. In severe cases, it may cause paralysis or coma."
+
+  utter_aes_prevention:
+  - text: "Prevention measures for Acute Encephalitis Syndrome include maintaining good hygiene practices, avoiding mosquito bites, ensuring vaccination against Japanese Encephalitis (JE) virus, and practicing proper sanitation and cleanliness."
+
+  utter_amoebiasis_description:
+  - text: "Amoebiasis is an intestinal infection caused by the parasite Entamoeba histolytica. It primarily affects the intestines but can also spread to other organs like the liver. It leads to symptoms such as diarrhea, abdominal pain, and fever."
+
+  utter_amoebiasis_symptoms:
+  - text: "The symptoms of Amoebiasis include diarrhea (which may contain blood or mucus), stomach cramps, abdominal pain, nausea, and fever. In severe cases, it can cause liver abscesses, leading to symptoms like jaundice and weight loss."
+
+  utter_amoebiasis_prevention:
+  - text: "To prevent Amoebiasis, it is essential to maintain good personal hygiene, wash hands regularly with soap and clean water, drink safe and clean water, and avoid consuming contaminated food and water."
+
+  utter_buruli_ulcer_description:
+  - text: "Buruli Ulcer is a chronic bacterial infection caused by Mycobacterium ulcerans. It affects the skin and underlying tissues, leading to the development of ulcers. It is primarily found in tropical and subtropical regions."
+
+  utter_buruli_ulcer_symptoms:
+  - text: "The symptoms of Buruli Ulcer include painless skin lesions that can gradually turn into ulcers. The ulcers may be accompanied by swelling, nodules, or skin thickening. In advanced stages, it can cause deformities and disability."
+
+  utter_buruli_ulcer_prevention:
+  - text: "Preventive measures for Buruli Ulcer include avoiding contact with stagnant water, wearing protective clothing (especially in endemic areas), and early detection and treatment of any skin lesions or ulcers."
+
+  utter_dengue_description:
+  - text: "Dengue is a viral infection transmitted through the bite of infected mosquitoes, primarily the Aedes mosquito. It causes flu-like symptoms, such as high fever, severe headache, joint and muscle pain, and rash."
+
+  utter_dengue_symptoms:
+  - text: "The symptoms of Dengue include high fever, severe headache (typically behind the eyes), joint and muscle pain, rash, nausea, and vomiting. In severe cases, it can lead to dengue hemorrhagic fever or dengue shock syndrome."
+
+  utter_dengue_prevention:
+  - text: "Prevention of Dengue involves eliminating mosquito breeding sites, using mosquito repellents, wearing protective clothing, and ensuring the use of bed nets. Community efforts, such as regular garbage disposal and mosquito control programs, are also crucial."
+
+  utter_japanese_encephalitis_description:
+  - text: "Japanese Encephalitis (JE) is a viral infection transmitted by mosquitoes, primarily in rural agricultural areas. It affects the brain and can cause severe neurological complications. JE is prevalent in many countries in Asia."
+
+  utter_japanese_encephalitis_symptoms:
+  - text: "The symptoms of Japanese Encephalitis include fever, headache, neck stiffness, seizures, confusion, and coma. In severe cases, it can lead to paralysis and permanent brain damage."
+
+  utter_japanese_encephalitis_prevention:
+  - text: "Prevention of Japanese Encephalitis involves vaccination, especially for individuals living in or traveling to endemic areas. Mosquito control measures, such as using bed nets and insect repellents, are also important."
+
+  utter_kala_azar_description:
+  - text: "Kala-azar, also known as Visceral Leishmaniasis, is a parasitic disease caused by the Leishmania donovani parasite. It affects the internal organs, such as the spleen, liver, and bone marrow. Kala-azar is transmitted through the bite of infected sandflies."
+
+  utter_kala_azar_symptoms:
+  - text: "The symptoms of Kala-azar include prolonged fever, weight loss, fatigue, enlarged spleen, and liver. Other symptoms may include anemia, decreased appetite, and swelling of the abdomen."
+
+  utter_kala_azar_prevention:
+  - text: "Prevention of Kala-azar involves controlling the sandfly population by using insecticides, wearing protective clothing, and using bed nets. Early diagnosis and treatment of cases are crucial to prevent the spread of the disease."
+
+  utter_leishmaniasis_description:
+  - text: "Leishmaniasis is a parasitic disease caused by the Leishmania parasite. It can manifest in three main forms: cutaneous, mucocutaneous, and visceral. The disease is transmitted through the bite of infected sandflies."
+
+  utter_leishmaniasis_symptoms:
+  - text: "The symptoms of Leishmaniasis vary depending on the form of the disease. Cutaneous Leishmaniasis causes skin ulcers, mucocutaneous Leishmaniasis affects the mucous membranes, and visceral Leishmaniasis affects the internal organs. Symptoms may include skin lesions, fever, weight loss, and enlargement of the spleen and liver."
+
+  utter_leishmaniasis_prevention:
+  - text: "Prevention of Leishmaniasis involves controlling the sandfly population, using insect repellents, wearing protective clothing, and sleeping under bed nets. Avoiding contact with sandfly-infested areas is also recommended."
+
+  utter_lymphatic_filariasis_description:
+  - text: "Lymphatic Filariasis, also known as Elephantiasis, is a parasitic disease caused by filarial worms. It affects the lymphatic system and can cause severe swelling and deformities in the limbs, breasts, and genitals."
+
+  utter_lymphatic_filariasis_symptoms:
+  - text: "The symptoms of Lymphatic Filariasis include swelling of the limbs, breasts, and genitals, thickening of the skin, fever, pain, and lymph node enlargement. In advanced stages, it can cause disability and social stigma."
+
+  utter_lymphatic_filariasis_prevention:
+  - text: "Prevention of Lymphatic Filariasis involves mass drug administration with antifilarial drugs to reduce the transmission of the disease. Personal protection measures, such as wearing protective clothing and using bed nets, can also help prevent mosquito bites."
+
+  utter_onchocerciasis_description:
+  - text: "Onchocerciasis, also known as River Blindness, is a parasitic disease caused by the worm Onchocerca volvulus. It is transmitted through the bite of infected blackflies. Onchocerciasis can lead to visual impairment and blindness."
+
+  utter_onchocerciasis_symptoms:
+  - text: "The symptoms of Onchocerciasis include severe itching, skin rashes, and eye lesions. In long-term infections, it can cause visual impairment, including blindness."
+
+  utter_onchocerciasis_prevention:
+  - text: "Prevention of Onchocerciasis involves community-directed treatment programs using antiparasitic drugs. Controlling the blackfly population through environmental measures, such as larviciding, is also important."
+
+  utter_pneumococcal_disease_description:
+  - text: "Pneumococcal Disease is an infection caused by the bacterium Streptococcus pneumoniae. It can manifest as pneumonia, meningitis, or other invasive infections. Pneumococcal Disease can be severe, especially in young children, older adults, and individuals with weakened immune systems."
+
+  utter_pneumococcal_disease_symptoms:
+  - text: "The symptoms of Pneumococcal Disease depend on the site of infection. In pneumonia, common symptoms include cough, fever, chest pain, and difficulty breathing. Meningitis can cause severe headache, neck stiffness, and neurological symptoms."
+
+  utter_pneumococcal_disease_prevention:
+  - text: "Prevention of Pneumococcal Disease involves vaccination, especially for high-risk groups. Good hygiene practices, such as regular handwashing, can also help prevent the spread of the bacteria."
+
+  utter_default:
+  - text: "I'm sorry, I didn't understand. Can you please rephrase your question?"
+  
+
+  utter_ask_precautionary_measures:
+  - text: "To protect yourself from COVID-19, follow these measures:
+      \n1. Wash your hands frequently with soap and water.
+      \n2. Wear a mask in public places.
+      \n3. Maintain physical distance from others.
+      \n4. Avoid touching your face.
+      \n5. Cover your mouth and nose while coughing or sneezing.
+      \n6. Stay home if you feel unwell.
+      \nRemember, staying informed is also important. Stay updated with the latest guidelines from health authorities."
+
+  utter_ask_symptoms:
+  - text: "Common symptoms of COVID-19 include:
+      \n1. Fever
+      \n2. Cough
+      \n3. Shortness of breath
+      \n4. Fatigue
+      \n5. Body aches
+      \nIf you experience these symptoms, it is advisable to consult a healthcare professional."
+
+  utter_ask_medical_professionals:
+  - text: "You can find medical professionals near you by checking online directories, contacting local hospitals, or using healthcare service apps. They can help you locate doctors and healthcare facilities in your area."
+
+  utter_ask_medicine:
+  - text: "It's important to consult a healthcare professional for medical advice and information about specific medications. They can recommend appropriate over-the-counter or prescription medicines based on your symptoms and condition."
+
+  utter_ask_basic_amenities:
+  - text: "To find food and water, you can visit local grocery stores, supermarkets, or order online. Many food delivery services are also available. Ensure you follow the guidelines provided by health authorities while going out."
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
